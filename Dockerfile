@@ -12,4 +12,4 @@ RUN apk update \
 	&& curl https://raw.githubusercontent.com/hq450/fancyss/master/rules/gfwlist.conf | sed 's/ipset=\/\.//g; s/\/gfwlist//g; /^server/d' > /tmp/temp_koolshare.txt \
 	&& cat /tmp/temp_gfwlist.txt /tmp/temp_koolshare.txt | sort -u > /etc/overture/domain_alternative_sample
 
-ENTRYPOINT ["/etc/overture/overture-linux-amd64","-v"]
+CMD /etc/overture/overture-linux-amd64 -c /etc/overture/config.json
