@@ -1,0 +1,55 @@
+{
+  "BindAddress": ":53",
+  "DebugHTTPAddress": "127.0.0.1:5555",
+  "PrimaryDNS": [
+    {
+      "Name": "DNSPOD",
+      "Address": "https://doh.pub/dns-query",
+      "Protocol": "https",
+      "SOCKS5Address": "",
+      "Timeout": 6,
+      "EDNSClientSubnet": {
+        "Policy": "manual",
+        "ExternalIP": "119.129.50.1",
+        "NoCookie": false
+      }
+    }
+  ],
+  "AlternativeDNS": [
+    {
+      "Name": "CloudFlare",
+      "Address": "https://cloudflare-dns.com/dns-query",
+      "Protocol": "https",
+      "SOCKS5Address": "",
+      "Timeout": 6,
+      "EDNSClientSubnet": {
+        "Policy": "disable",
+        "ExternalIP": "",
+        "NoCookie": false
+      }
+    }
+  ],
+  "OnlyPrimaryDNS": false,
+  "IPv6UseAlternativeDNS": false,
+  "AlternativeDNSConcurrent": false,
+  "PoolIdleTimeout": 15,
+  "PoolMaxCapacity": 15,
+  "WhenPrimaryDNSAnswerNoneUse": "AlternativeDNS",
+  "IPNetworkFile": {
+    "Primary": "/etc/overture/ip_network_primary_sample",
+    "Alternative": "/etc/overture/ip_network_alternative_sample"
+  },
+  "DomainFile": {
+    "Primary": "/etc/overture/domain_primary_sample",
+    "Alternative": "/etc/overture/domain_alternative_sample",
+    "Matcher": "regex-list"
+  },
+  "HostsFile": {
+    "HostsFile": "/etc/overture/hosts_sample",
+    "Finder": "regex-list"
+  },
+  "MinimumTTL": 0,
+  "DomainTTLFile" : "/etc/overture/domain_ttl_sample",
+  "CacheSize" : 0,
+  "RejectQType": [255]
+}
