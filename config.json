@@ -18,7 +18,7 @@
   "AlternativeDNS": [
     {
       "Name": "CloudFlare",
-      "Address": "https://cloudflare-dns.com/dns-query",
+      "Address": "https://cloudflare-dns.com/dns-query@104.16.248.249",
       "Protocol": "https",
       "SOCKS5Address": "",
       "Timeout": 6,
