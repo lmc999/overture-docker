@@ -4,7 +4,7 @@
   "PrimaryDNS": [
     {
       "Name": "DNSPOD",
-      "Address": "https://doh.pub/dns-query",
+      "Address": "https://doh.pub/dns-query@162.14.21.178",
       "Protocol": "https",
       "SOCKS5Address": "",
       "Timeout": 6,
