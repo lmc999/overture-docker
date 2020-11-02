@@ -4,8 +4,8 @@
   "PrimaryDNS": [
     {
       "Name": "DNSPOD",
-      "Address": "https://doh.pub/dns-query@162.14.21.178",
-      "Protocol": "https",
+      "Address": "119.29.29.29:53",
+      "Protocol": "udp",
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
@@ -18,8 +18,8 @@
   "AlternativeDNS": [
     {
       "Name": "CloudFlare",
-      "Address": "https://cloudflare-dns.com/dns-query@104.16.248.249",
-      "Protocol": "https",
+      "Address": "1.1.1.1:53",
+      "Protocol": "udp",
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
