@@ -17,9 +17,9 @@
   ],
   "AlternativeDNS": [
     {
-      "Name": "CloudFlare",
-      "Address": "1.1.1.1:53",
-      "Protocol": "udp",
+      "Name": "OpenDNS",
+      "Address": "208.67.222.222:443",
+      "Protocol": "tcp",
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
